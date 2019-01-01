@@ -1,7 +1,7 @@
 /**
  * Why Fallback Intent
  */
-const Intent = require('../../../../src/Intent/intent');
+const Intent = girequire('src/Intent/intent');
 
 module.exports = class WhyIntent extends Intent {
 

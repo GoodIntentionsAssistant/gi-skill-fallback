@@ -1,20 +1,20 @@
 /**
  * Confirm Fallback Intent
  */
-const Intent = require('../../../../src/Intent/intent');
+const Intent = girequire('src/Intent/intent');
 
 module.exports = class ConfirmIntent extends Intent {
 
 	setup() {
 		this.train([
-			'@App.Common.Entity.Confirm'
+			'@App.Basics.Entity.Confirm'
 		], {
 			collection: 'fallback'
 		});
 
 		this.parameter('confirm', {
 			name: 'Confirm',
-			entity: 'App.Common.Entity.Confirm'
+			entity: 'App.Basics.Entity.Confirm'
 		});
 	}
 
